@@ -1,0 +1,56 @@
+[
+  {
+    "description":"A lifting body is a fixed-wing aircraft or spacecraft configuration in which the body itself produces lift. In contrast to a flying wing, which is a wing with minimal or no conventional fuselage",
+    "picture": "https://i.ibb.co/rGW3hS0/download-1.png",
+    "name": "Body Lifting",
+    "id":1
+  },
+  {
+    "description":"The plank is an excellent abdominal and core exercise. To ensure you keep your core strong and stable, add the plank to your ab workout program.",
+    "picture": "https://i.ibb.co/27HNGc7/images-1.png?fbclid=IwAR3UB03Ygs5WauLJkS6O4m3hqzs7jwHQv-mRGdfYgrifn7J6xTkAZCtdQ40",
+    "name": "Body Plunk",
+    "id":2
+  },
+  {
+    "description":"Having and maintaining a healthy core is important. Over time we lose good posture due to the daily demands of a life spent mostly in the seated position. One of the best ways to prevent ",
+    "picture": "https://i.ibb.co/dfkZcNp/images.png?fbclid=IwAR3MYw_Uwn8IaXaLwlDGlp27eB4F-xDwN_K5TOtK3qdJmBdwUnzHB6TkL4s",
+    "name": "Hand Roller",
+    "id":3
+  },
+  {
+    "description":"Lifting a weight that’s too heavy for you is a mistake regardless of the part of the body you’re working, but it can be truly disastrous when performing shoulder exercises. The shoulders are delicate and complicated joints that are not especially easy to target.",
+    "picture": "https://i.ibb.co/gWXXbs0/download-3.png?fbclid=IwAR2VcWPTtKZmJkkkOZv6oJuGfd3TFJ3Xv8IIHnyooLGvTa5GDVsQbSMkIes",
+    "name": "Shoulder Work",
+    "id":4
+  },
+  {
+    "description":"The biceps might not be the largest muscle group on your arms—that title actually goes to the triceps—but they might be the most noticeable given their position on the front of the limb. These guns aren't all for show, either.",
+    "picture": "https://i.ibb.co/MPrxDJN/download-4.png?fbclid=IwAR0N1olhDzCyiIebK2QxU4aOSPdFVXr-umYTJGoQLSUr7WILCDG1aJeM25U",
+    "name": "Biceps Work",
+    "id":5
+  },
+  {
+    "description":"Start in a pushup position with a dumbbell in each hand. ... At the top of the pushup pull the right dumbbell off the ground, rotate from the core and press it straight up into a side plank.",
+    "picture": "https://i.ibb.co/M7bY4Z6/download.png?fbclid=IwAR0sF4yexrRaLJAytfw9AH4i3p868cE7Ir2vVag-eddeDV4g2NGX0pLXxkQ",
+    "name": "Dumble Pushup",
+    "id":6
+  },
+    {
+    "description":"Cardiovascular, or cardio, exercises are any exercises that increase a person’s heart rate. Cardio exercises can be beneficial to people who want to reach or maintain a moderate weight or stay healthy.",
+    "picture": "https://i.ibb.co/YLLHwQM/images-2.png?fbclid=IwAR0U3S71VvgQ8qiy4PSiLSFvxrFXJoBwe6MiPeIFXmgd8z8gYHbjU3qziVc",
+    "name": "Cardio",
+    "id":7
+  },
+  {
+   "description":"A gym ball can be used by beginners to work on their squat technique. If they place the gym ball between the wall and their lower back, it can be used to support their back.",
+    "picture": "https://i.ibb.co/W0ZLSQN/images-3.png?fbclid=IwAR2CQmZLGmKg08octl9AZuLn0SqqE0UTKq1SREX6yBJRQBFpheXg33QeEDI",
+    "name": "Gym Ball",
+    "id":8
+  },
+  {
+    "description":"The Dumbbell Squat is a foundational exercise for any athlete who wants to build strength and power in the legs and hips, particularly in the quads and glutes. It eliminates the weight load on the upper back.",
+    "picture": "https://i.ibb.co/rb6Mtvg/images-4.png?fbclid=IwAR1xQa7sprJ-nR2McXdEmqU83lsBoyogU_DXp6vcBgV45TchPn04kKo5u54",
+    "name": "Dumble Squat",
+    "id":9
+  }
+]

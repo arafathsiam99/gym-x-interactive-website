@@ -1,0 +1,12 @@
+.custom-h1 {
+  color: rgb(245, 106, 82);
+}
+.custom-btn {
+  border: none;
+  border-radius: 20px;
+  background-color: tomato;
+  color: white;
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
