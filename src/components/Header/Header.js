@@ -3,9 +3,13 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import useAuth from '../../Hooks/UseAuth';
+import Button from '@restart/ui/esm/Button';
 
 const Header = () => {
   const {user,logOut}=useAuth();
+  const handleLogOut=()=>{
+      logOut();
+  }
     return (
         <div>
            <Navbar bg="dark" variant="dark">
@@ -16,9 +20,9 @@ const Header = () => {
       <Link to="/services" className="nav-link">Services</Link>
       <Link to="/instructors" className="nav-link">Instructors</Link>
       <Link to="/blog" className="nav-link">Blog</Link>
-      {user?.email ?
+      {!user?.email ?
         <Link to="/login" className="nav-link">Login</Link>:
-        <Link onClick={logOut} className="nav-link">Logout</Link>
+        <button onClick={handleLogOut}>Logout</button>
         }
       <Navbar.Text>
       {user.displayName}

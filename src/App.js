@@ -8,6 +8,7 @@ import Instructors from './components/Instructors/Instructors';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import NotFound from './components/NotFound/NotFound';
+import Register from './components/Register/Register';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import Services from './components/Services/Services';
 import AuthProvider from './Contexts/AuthProvider';
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route exact path="/login">
               <Login></Login>
+          </Route>
+          <Route exact path="/register">
+              <Register></Register>
           </Route>
           <Route exact path="*">
             <NotFound></NotFound>
