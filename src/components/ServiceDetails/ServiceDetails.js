@@ -12,9 +12,12 @@ const ServiceDetails = () => {
     const showDetails=services?.find(detail=> detail && detail.id.toString()===serviceDetailsId);
     return (
         <div>
-            <h1>This is :{showDetails?.name}</h1>
+           <div className="container mt-5">
+                <h1 className="custom-font">{showDetails?.name}</h1>
             <img src={showDetails?.picture} alt="" />
             <p>{showDetails?.description}</p>
+            <button className="custom-btn">More Details</button>
+           </div>
         </div>
     );
 };
