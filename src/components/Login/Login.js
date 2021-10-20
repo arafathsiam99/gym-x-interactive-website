@@ -1,23 +1,25 @@
-import React, { useState } from 'react';
-import useAuth from '../../Hooks/UseAuth';
+import React, { useState} from 'react';
 import initializeAuthentication from '../../Hooks/useFirebase/firebase.init';
 import useFirebase from '../../Hooks/useFirebase/useFirebase';
 import {
-  GoogleAuthProvider,
-  signInWithPopup,
   getAuth,
   signInWithEmailAndPassword
 } from "firebase/auth";
+import { useLocation,useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 
 initializeAuthentication();
 
 
 const Login = () => {
+  const location=useLocation();
+  const history = useHistory();
+  const redirect_uri = location.state?.from|| "/home";
     const auth =getAuth();
    const{user,googleSignIn} =useFirebase();
     const handleGoogleSignIn =()=>{
         googleSignIn();
+        history.push(redirect_uri);
     }
     const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -40,14 +42,19 @@ const Login = () => {
     console.log(email, password);
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
+        history.push(redirect_uri);
         console.log(result.user);
       })
       .catch((error) => setError(error.message));
+      
   };
 
     return (
         <div>
-            <h2>Please Login</h2>
+            <div className="login-box d-flex align-items-center justify-content-center">
+              <div className="login">
+                <div className="login-box">
+                  <h2 className="custom-font">Please Login</h2>
             <form onSubmit={handleOnSubmit}>
               <input
                onChange={handleEmailChange}
@@ -65,13 +72,16 @@ const Login = () => {
                 placeholder="Enter your Password"
               />
               <input
-                className="mt-3 w-50 btn btn-success m-auto"
+                className="mt-3 w-50 custom-btn m-auto mb-3"
                 type="submit"
-                value="Register"
+                value="Login"
               />
             </form>
-            <button onClick={handleGoogleSignIn} className='custom-btn'>Google Sign</button>
+            <button onClick={handleGoogleSignIn} className='btn btn-success w-80'>Google Sign In</button>
             <Link to="/register"> <p>New to account? Please Register</p></Link>
+                </div>
+              </div>
+            </div>
         </div>
     );
 };

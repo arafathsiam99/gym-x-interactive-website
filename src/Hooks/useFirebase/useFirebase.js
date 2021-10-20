@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider,signOut, onAuthStateChanged } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider,signOut, onAuthStateChanged,updateProfile } from "firebase/auth";
 import initializeAuthentication from './firebase.init';
 initializeAuthentication();
 
 
 const useFirebase = () => {
+    const [name,setName]=useState('');
      const [user,setUser] =useState({});
      const[isLoading,setIsLoading]=useState(true);
      const googleProvider = new GoogleAuthProvider();
@@ -21,6 +22,13 @@ const useFirebase = () => {
 
   .catch((error) => {
     console.log(error.message);
+  });
+  }
+  const updateName=()=>{
+    updateProfile(auth.currentUser, {
+  displayName: name
+  }).then(() => {
+  }).catch((error) => {
   });
   }
 
@@ -46,6 +54,8 @@ const useFirebase = () => {
         googleSignIn,
         isLoading,
         setUser,
+        setName,
+        updateName,
         logOut
     };
 };

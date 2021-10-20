@@ -3,7 +3,6 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import useAuth from '../../Hooks/UseAuth';
-import Button from '@restart/ui/esm/Button';
 
 const Header = () => {
   const {user,logOut}=useAuth();
@@ -22,9 +21,9 @@ const Header = () => {
       <Link to="/blog" className="nav-link">Blog</Link>
       {!user?.email ?
         <Link to="/login" className="nav-link">Login</Link>:
-        <button onClick={handleLogOut}>Logout</button>
+        <button className="custom-btn" onClick={handleLogOut}>Logout</button>
         }
-      <Navbar.Text>
+      <Navbar.Text className='text-white'>
       {user.displayName}
       </Navbar.Text>
     </Nav>

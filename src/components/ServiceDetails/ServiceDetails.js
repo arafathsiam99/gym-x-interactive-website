@@ -9,10 +9,12 @@ const ServiceDetails = () => {
         .then(res=>res.json())
         .then(data=>setServices(data))
     },[]);
-    const showDetails=services.find(detail=>services?.id ==serviceDetailsId  && detail);
+    const showDetails=services?.find(detail=> detail && detail.id.toString()===serviceDetailsId);
     return (
         <div>
-            <h1>This is :{serviceDetailsId}</h1>
+            <h1>This is :{showDetails?.name}</h1>
+            <img src={showDetails?.picture} alt="" />
+            <p>{showDetails?.description}</p>
         </div>
     );
 };

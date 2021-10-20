@@ -64,13 +64,13 @@ const Home = () => {
           </section>
          </section>
          <section className='mt-5 container' >
-           <div className='justify-content-center mb-5'>
+           <div className='justify-content-center align-items-center mb-5'>
              <h4 className='custom-font'>Become a part of us</h4>
                <h1>Our Memberships</h1>
             </div>
            <div className="row mx-5 mt-2">
              <div className="col-md-4">
-               <Card style={{ width: '18rem' }}>
+               <Card>
                 <Card.Body>
                 <Card.Title>BEGINNER PLAN</Card.Title>
                 <Card.Subtitle className="mb-2 custom-font">FOR ROOKIES</Card.Subtitle>
@@ -86,7 +86,7 @@ const Home = () => {
                 </Card>
              </div>
              <div className="col-md-4">
-               <Card style={{ width: '18rem' }}>
+               <Card>
                 <Card.Body>
                 <Card.Title>PREMIUM PLAN</Card.Title>
                 <Card.Subtitle className="mb-2 custom-font">FOR FITNESS LOVERS</Card.Subtitle>
@@ -102,7 +102,7 @@ const Home = () => {
                 </Card>
              </div>
              <div className="col-md-4">
-               <Card style={{ width: '18rem' }}>
+               <Card>
                 <Card.Body>
                 <Card.Title>ULTIMATE PLAN</Card.Title>
                 <Card.Subtitle className="mb-2 custom-font">FOR THE ADDICTED</Card.Subtitle>
